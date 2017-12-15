@@ -134,8 +134,6 @@
                         <dt>prefecture :</dt>
                         <dd id="prefecture"></dd>
                     </dl>
-                    <!-- <p label="data"></p>
-                    <p>{{ FR29.name }}</p> -->
                 </section>
                 <section id="content2">
                     <button id="rng_btn" disabled>new random department</button>
@@ -370,36 +368,6 @@
 
                     random_department = null;
                 }
-                
-                /* var container = document.getElementById('template');
-                var template = container.innerHTML;
-                // console.log("template: ", template);
-                var pattern = /{{ ([\d, \w, .]*) }}/g;
-                var match;
-    
-                function decomposer (key) {
-                    console.log("decomposer.key: ", typeof(key), key);
-                    //return ["FR29"]["name"];
-                    decomposer(key[1]);
-                }
-            
-                while ((match = pattern.exec(template)) !== null) {
-                    var toModify = match[0];
-                    var key = match[1].split('.');
-                    console.log("key: ", key);
-                    var value = data[key[0]][key[1]];
-                    decomposer(key);
-                    console.log(data["FR29"]["name"]);
-    
-                    if (!value) {
-                        console.error(`No value for: ${key}`);
-                        value = '';
-                    }
-                    template = template.replace(toModify, value);
-                }
-                container.innerHTML = template;
-                console.log("template: ", template);
-                console.log("container: ", container);  */
             });
         </script>
     </body>
